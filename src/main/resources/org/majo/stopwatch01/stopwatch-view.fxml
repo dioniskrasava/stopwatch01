@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.majo.stopwatch01.StopwatchController">
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+    </padding>
+
+    <Label fx:id="timeLabel" text="00:00:00" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="10.0" alignment="CENTER">
+        <Button text="Play" onAction="#onPlayButtonClick" style="-fx-font-size: 12px; -fx-pref-width: 60px;"/>
+        <Button text="Pause" onAction="#onPauseButtonClick" style="-fx-font-size: 12px; -fx-pref-width: 60px;"/>
+        <Button text="Reset" onAction="#onResetButtonClick" style="-fx-font-size: 12px; -fx-pref-width: 60px;"/>
+    </HBox>
+</VBox>
